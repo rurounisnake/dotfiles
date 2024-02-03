@@ -1,0 +1,13 @@
+[user]
+	name = rurounisnake
+	email = 150418937+rurounisnake@users.noreply.github.com
+[alias]
+	lg = log --oneline -5
+	clearall= checkout -- .
+	df = diff --cached
+	cleanall = clean -fx
+	dff = diff --name-status HEAD^ HEAD
+	dfc = diff HEAD^ HEAD
+	addm = add -u .
+[core]
+	autocrlf = false
