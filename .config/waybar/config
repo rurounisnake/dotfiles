@@ -5,8 +5,8 @@
 "margin-bottom":0,
 "margin-top":0,
 
-"modules-left": ["sway/mode","cpu","memory","network","mpd"],
-"modules-center": ["sway/workspaces","hyprland/workspaces"],
+"modules-left": ["sway/mode","cpu","memory","network"],
+"modules-center": ["custom/launcher","hyprland/workspaces"],
 "modules-right":  ["tray","pulseaudio","bluetooth","custom/corne","clock","custom/exit","user"],
 
 "battery": {
@@ -55,7 +55,8 @@
 	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+	"on-click": "bluedevil-wizard"
 },
 "custom/corne": {
     "exec": "python ~/.config/waybar/zmk_split-battery_waybar.py",
@@ -63,11 +64,15 @@
     "format": "{}",
     "interval": 60
 },
-// Other
 "user": {
     "format": "{user} ",
     "interval": 60,
     "icon": true
+},
+"custom/launcher": {
+    "format":"󰀻 ",
+    "on-click": "exec nwg-drawer",
+    "tooltip": false,
 },
 "cpu": {
     "format": "&#8239;{usage}%",
@@ -85,7 +90,7 @@
 "network": {
   "interval": 2,
   "format-wifi": " {signalStrength}%",
-  "format-ethernet": "",
+  "format-ethernet": " {bandwidthDownBytes} {bandwidthUpBytes} ",
   "format-linked": " {ipaddr}",
   "format-disconnected": " Disconnected",
   "format-disabled": "",
