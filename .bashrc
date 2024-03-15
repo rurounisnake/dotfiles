@@ -13,4 +13,6 @@ alias wboot='sudo grub-reboot 2 && reboot'
 alias hypr='vim ~/.config/hypr/hyprland.conf'
 alias gitd='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias corne='python ~/.config/waybar/zmk_split-battery_waybar.py'
+alias corne='python ~/.config/waybar/zmk_split-battery_waybar.py'
+alias files='nautilus admin:///usr/'
 source /usr/share/blesh/ble.sh

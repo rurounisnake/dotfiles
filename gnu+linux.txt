@@ -228,3 +228,6 @@ pactl info
 
 * Update .bashrc to directly boot into Windows with cmd wboot, where 2 is Windows on GRUB menu
 alias wboot='sudo grub-reboot 2 && reboot'
+
+* Fix Corne battery py  script error - ModuleNotFoundError: No module named 'dbus_next'
+sudo pacman -S python-dbus-next
