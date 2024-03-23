@@ -234,7 +234,7 @@ alias wboot='sudo grub-reboot 2 && reboot'
 sudo pacman -S python-dbus-next
 
 ** Fix notify-send: not found, volume not updatng with mako notif
-sudo  pacman -S libnotify pamixer
+sudo pacman -S libnotify pamixer
 
 ** Fix icons in waybar
 sudo pacman -S  ttf-font-awesome
