@@ -7,7 +7,7 @@
 
 "modules-left": ["sway/mode","cpu","memory","network"],
 "modules-center": ["hyprland/workspaces"],
-"modules-right":  ["tray","pulseaudio","bluetooth","custom/corne","clock","custom/exit","user"],
+"modules-right":  ["tray","pulseaudio","clock","custom/exit","user"],
 
 "battery": {
   "states": {
