@@ -4,6 +4,7 @@
 "height": 10,
 "margin-bottom":0,
 "margin-top":0,
+"start_hidden":1,
 
 "modules-left": ["sway/mode","cpu","memory","network"],
 "modules-center": ["hyprland/workspaces"],

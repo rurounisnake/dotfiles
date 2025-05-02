@@ -38,10 +38,10 @@ adjust_line_height 0
 box_drawing_scale 0.001, 1, 1.5, 2
 
 # The foreground color
-foreground       #dddddd
+# foreground       #dddddd
 
 # The background color
-background       #000000
+# background       #000000
 
 # The opacity of the background. A number between 0 and 1, where 1 is opaque and 0 is fully transparent.
 # This will only work if supported by the OS (for instance, when using a compositor under X11). Note
@@ -56,18 +56,18 @@ background       #000000
 background_opacity 1.0
 
 # The foreground for selections
-selection_foreground #000000
+# selection_foreground #000000
 
 # The background for selections
-selection_background #FFFACD
+# selection_background #FFFACD
 
 # The color and style for highlighting URLs on mouse-over. url_style can be one of:
 # none, single, double, curly
-url_color #0087BD
+# url_color #0087BD
 url_style curly
 
 # The cursor color
-cursor           #cccccc
+# cursor           #cccccc
 
 # The cursor shape can be one of (block, beam, underline)
 cursor_shape     block
@@ -187,21 +187,21 @@ window_margin_width 0
 window_padding_width 0
 
 # The color for the border of the active window
-active_border_color #00ff00
+# active_border_color #00ff00
 
 # The color for the border of inactive windows
-inactive_border_color #cccccc
+# inactive_border_color #cccccc
 
 # Fade the text in inactive windows by the specified amount (a number between
 # zero and one, with 0 being fully faded).
 inactive_text_alpha 1.0
 
 # Tab-bar customization
-active_tab_foreground #000
-active_tab_background #eee
+# active_tab_foreground #000
+# active_tab_background #eee
 active_tab_font_style bold-italic
-inactive_tab_foreground #444
-inactive_tab_background #999
+# inactive_tab_foreground #444
+# inactive_tab_background #999
 inactive_tab_font_style normal
 tab_separator " ┇"
 
@@ -210,36 +210,36 @@ tab_separator " ┇"
 # bright version.
 
 # black
-color0   #000000
-color8   #4d4d4d
+# color0   #000000
+# color8   #4d4d4d
 
 # red
-color1   #cc0403
-color9   #f2201f
+# color1   #cc0403
+# color9   #f2201f
 
 # green
-color2   #19cb00
-color10  #23fd00
+# color2   #19cb00
+# color10  #23fd00
 
 # yellow
-color3   #cecb00
-color11  #fffd00
+# color3   #cecb00
+# color11  #fffd00
 
 # blue
-color4  #0d73cc
-color12 #1a8fff
+# color4  #0d73cc
+# color12 #1a8fff
 
 # magenta
-color5   #cb1ed1
-color13  #fd28ff
+# color5   #cb1ed1
+# color13  #fd28ff
 
 # cyan
-color6   #0dcdcd
-color14  #14ffff
+# color6   #0dcdcd
+# color14  #14ffff
 
 # white
-color7   #dddddd
-color15  #ffffff
+# color7   #dddddd
+# color15  #ffffff
 
 
 # Key mapping
@@ -394,3 +394,9 @@ x11_bell_volume 80
 # font used is system dependent. It can be overriden using symbol_map in the kitty
 # configuration.
 prefer_color_emoji yes
+
+
+# BEGIN_KITTY_THEME
+# Ubuntu
+include current-theme.conf
+# END_KITTY_THEME
