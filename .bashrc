@@ -16,4 +16,5 @@ alias corne='python ~/.config/waybar/zmk_split-battery_waybar.py'
 alias corne='python ~/.config/waybar/zmk_split-battery_waybar.py'
 alias files='nautilus admin:///usr/'
 alias vi=vim
+alias cortana='ssh -i /home/tejas/.ssh/homelab cortana'
 source /usr/share/blesh/ble.sh
